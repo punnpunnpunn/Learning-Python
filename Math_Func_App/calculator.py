@@ -1,0 +1,28 @@
+from tkinter import *
+calc=Tk()
+calc.title("Calculator App")
+calc.geometry('350x200')
+def click():
+    equation=Label(calc,text=9)
+    equation.grid(column=3,row=3)
+nine=Button(calc,text=9,font=("Arial",20),command=click)
+nine.grid(column=0,row=0)
+eight=Button(calc,text=8,font=("Arial",20),command=click)
+eight.grid(column=1,row=0)
+seven=Button(calc,text=7,font=("Arial",20),command=click)
+seven.grid(column=2,row=0)
+six=Button(calc,text=6,font=("Arial",20),command=click)
+six.grid(column=0,row=1)
+five=Button(calc,text=5,font=("Arial",20),command=click)
+five.grid(column=1,row=1)
+four=Button(calc,text=4,font=("Arial",20),command=click)
+four.grid(column=2,row=1)
+three=Button(calc,text=3,font=("Arial",20),command=click)
+three.grid(column=0,row=2)
+two=Button(calc,text=2,font=("Arial",20),command=click)
+two.grid(column=1,row=2)
+one=Button(calc,text=1,font=("Arial",20),command=click)
+one.grid(column=2,row=2)
+
+
+calc.mainloop()
